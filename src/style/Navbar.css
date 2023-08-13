@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a:hover{
+    color:white;
+}
+body{
+    font-size: .625rem;
+    /* overflow: hidden; */
+}
+header{
+    background-color: #574C77;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    position: relative;
+    z-index: 2;
+}
+li{
+    list-style: none;
+    margin: 0 .5rem;
+}
+.nav-branding{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Lavishly Yours', cursive;
+    font-weight: 600;
+    transition: all .3s;
+}
+.nav-branding:hover{
+    color: #e2d9f1;
+}
+.nav-info{
+    display: flex;
+}
+.Navbar{
+    width: 85%;
+    min-height: 4rem;
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-menu{
+    /* width: 22rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-link{
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+.nav-item{
+    list-style: none;
+    border-radius: 20rem;
+    border: 1px solid #574C77 ;
+    transition: 0.3s linear;
+}
+.RegBtnContainer{
+    border: 1px solid white;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    border-radius: 33px;
+    transition:all 0.3s ;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+.RegBtnContainer::before{
+    content: '';
+    position: absolute;
+    border-radius: 33px;
+    left: 0;
+
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    transition:all 0.3s ;
+    z-index: -1;
+    background-color: #443b61;
+}
+.RegBtnContainer:hover{
+    &::before{
+        width: 100%;
+    }
+}
+.RegisterBtn{
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+.nav-item:hover{
+    list-style: none;
+    color: white;
+    border-color:  white;
+}
+ul{
+    margin-bottom: 0
+}
+.nav-link:hover{
+    color: white;
+}
+.hambuger-icon{
+    visibility: hidden;
+}
+@media only screen and (max-width:700px){
+    .nav-menu{
+        flex-direction: column;
+        /* top: 4.6rem; */
+        width: 100%;
+        background: #574C77;
+    }
+    ul{
+        padding-left: 0;
+    }
+
+    .hambuger-icon{
+        visibility: visible;
+        width: 6.5rem;
+        position: relative;
+        top: 2.7rem;
+        right: -6.5rem;
+        height: 1.5rem;
+        cursor: pointer;
+    }
+    .bar{
+    width: 2.5rem;
+    height: 0.35rem;
+    margin: 0 0 0.2rem 0;
+    background: white;
+    border: 1px solid black;
+    transition: all .3s;
+    }
+    
+    .nav-link{
+        padding: 0.5rem 1rem;
+    }
+    .RegBtnContainer{
+        height: 0;
+        border: none;
+    }
+    
+    .nav-item{
+        list-style: none;
+        border-radius: 0;
+        border-bottom: 1px solid #574C77 ;
+        border-top: 0;
+        margin: 0.2rem;
+        border-right: 0;
+        border-left: 0;
+    }
+    .nav-item:hover{
+        list-style: none;
+        color: white;
+        border-bottom: 1px solid white;
+    }
+    
+    
+    .second-part-nav{
+        display: block;
+    }
+    .nav-info{
+            /* left: 0; */
+    /* display: flex; */
+    position: relative;
+    /* display: flex; */
+    /* z-index: -1; */
+    flex-direction: column;
+    top: 3.8rem;
+    width: 9rem;
+    /* width: 9rem; */
+    height: 5.5rem;
+    right: -13rem;
+    background:  #574C77;
+    transition: 1s ease-in-out;
+    }
+    .nav-info.active{
+        right: -3.4rem;
+    }
+    .cancelbar1{
+    width: 2.5rem;
+    height: 0.35rem;
+    background: white;
+    border: 1px solid black;
+    transform: rotate(-45deg);
+    }
+    .cancelbar2{
+        width: 0;
+        height: 0;
+
+    }
+    .cancelbar3{
+        width: 2.5rem;
+        height: 0.35rem;
+        background: white;
+        border: 1px solid black;
+        transform: rotate(45deg);
+        }
+
+}
+@media  only screen and (max-width:447px) {
+    .nav-menu {
+        /* width: 22rem; */
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .RegBtnContainer{
+        height: 0;
+        border: none;
+    }
+    .nav-link{
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+    .nav-item{
+        margin: 0;
+    }
+    
+    /* .RegisterBtn{
+        margin-bottom: .3rem;
+    } */
+}

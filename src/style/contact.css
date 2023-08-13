@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: .625rem;
+    /* overflow: hidden; */
+}
+.contact-container{
+    width: 100%;
+    /* height: 100vh; */
+    background: #3C3C3C;
+    position: relative;
+}
+.contact-container .contactMainBox{
+    /* height: 60%; */
+    display: flex;
+    padding: 4rem 25rem;
+    flex-direction: column;
+}
+.contact-container .contactMainBox .contactTitlebar{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    color: white;
+    font-size: 2rem;
+}
+.contact-container .contactMainBox .contactTitlebar p{
+    margin: 0 0 3rem 0;
+}
+.contact-container .contactMainBox .formRow{
+    display: flex;
+    margin: 0 0 2rem 0;
+    justify-content: space-between;
+}
+.contact-container .contactMainBox .formRow .infobox{
+    display: flex;
+    /* margin: 0 6.5rem 0 0; */
+    flex-direction: column;
+}
+.contact-container .contactMainBox  label{
+    color: white;
+    font-size: 1rem;
+    margin: 0 0 0.5rem 0;
+}
+.contact-container .contactMainBox input{
+    /* width: 26rem; */
+    border: none;
+    border-bottom: 1px solid white;
+    background: none;
+    /* border: none; */
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.contact-container .contactMainBox .msgRow{
+    display: flex;
+    flex-direction: column;
+
+}
+.contact-container .contactMainBox .msgRow textarea{
+    border: none;
+    background: no-repeat;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    width: 100%;
+
+}
+.contact-container .contactMainBox .msgbtnRow{
+    display: flex;
+    justify-content: flex-end;
+    margin: 2rem 0;
+}
+.contact-container .contactMainBox .msgbtnRow .SendMsgBtn{
+    background: #4B2F9C;
+    width: 10rem;
+    height: 3rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-container .contactMainBox .msgbtnRow .SendMsgBtn:before{
+    content: '';
+    position: absolute;
+    /* border-radius: 4rem; */
+    left: 0;
+
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    transition:all 0.3s ;
+    z-index: -1;
+    
+    background-color: #6149a8;
+}
+.contact-container .contactMainBox .msgbtnRow .SendMsgBtn:hover{
+    &::before{
+        width: 100%;
+        
+    }
+    /* color: #CFBEFF; */
+}
+.contact-container .contactMainBox .msgbtnRow .SendMsgBtn .SendMsgLink{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.contact-container .site-links{
+    display: flex;
+    justify-content: center;
+    padding: 0 0 2rem 0;
+}
+.contact-container .site-links .facebook img{
+    width: 3rem;
+}
+.contact-container .site-links .twitter img{
+    height: 1.8rem;
+}
+.contact-container .site-links .insta img{
+    width: 2rem;
+    height: 2rem;
+}
+.contact-container .site-links  .identical{
+    margin: 0 1rem 0 0;
+}
+.contact-container .BackToTop{
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+}
+@media screen and (max-width:1300px) {
+    .contact-container .contactMainBox{
+        padding: 4rem 21rem;
+    }
+}
+@media screen and (max-width:1200px) {
+    .contact-container .contactMainBox{
+        padding: 4rem 10rem;
+    }
+}
+@media screen and (max-width:900px) {
+    .contact-container .contactMainBox{
+        padding: 4rem 5rem;
+    }
+}
+@media screen and (max-width:700px) {
+    .contact-container .contactMainBox .formRow{
+        margin: 0;
+    }
+    .contact-container .contactMainBox .formRow .infobox {
+        margin: 0 0 3rem 0;
+    }
+}

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: .625rem;
+    /* overflow: hidden; */
+}
+.about-comp{
+    height: 100vh;
+    background: #574c77;
+}
+.about-comp .about-container{
+    margin: 2rem 4rem;
+}
+.about-comp .about-container .about-headding{
+
+    color: #CAC0E7;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.about-comp .about-container .about-info{
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin: 1rem 0px;
+}

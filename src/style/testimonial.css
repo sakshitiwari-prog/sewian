@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: .625rem;
+    /* overflow: hidden; */
+}
+.section{
+    height: 80vh;
+    display: flex;
+    background-color: #CFBEFF;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section .testimonial-title h2{
+    color: #574C77;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+.section .section-center{
+    display: flex;
+    width: 40rem;
+    position: relative;
+    overflow: hidden;
+    height: 50vh;
+
+}
+button{
+    background: none;
+    border: none;
+}
+.section .section-center .rightbtn{
+    position: absolute;
+    color: #574c7b;
+    font-size: 3rem;
+    cursor: pointer;
+    top: 10rem;
+    left: 37rem;
+}
+.section .section-center .leftbtn{
+    position: absolute;
+    color: #574c7b;
+    font-size: 3rem;
+    top: 10rem;
+    cursor: pointer;
+}
+.section .section-center article {
+    position: absolute;
+    padding: 2rem;
+    margin: 2rem 6rem;
+    /* opacity: 0; */
+    transition: 1s ease-in-out var(--transition);
+}
+.section .section-center article img{
+    width: 7rem;
+    /* border: 1px solid #9575cd; */
+    filter: drop-shadow(0 0 0.5rem #9575cd);
+    border-radius: 50%;
+    height: 7rem;
+}
+.section .section-center article .name{
+    margin: 1rem 0 2rem;
+    font-weight: 500;
+}
+.section .section-center article .comment{
+    font-size: 1rem;
+    width: 23rem;
+    color: black;
+    font-weight: normal;
+}
+article.activeSlide{
+    opacity: 1;
+    transform: translateX(0);
+}
+article.lastSlide{
+    transform: translateX(-39rem);
+}
+article.nextSlide{ 
+    transform: translateX(39rem);
+}
+
+@media screen and (max-width:650px) {
+    .section .section-center{
+        width: 100%;
+        justify-content: space-between;
+    }
+    section .section-center article .comment {
+        width: 13rem;
+    }
+    .section .section-center article {
+
+        margin: 2rem 0;
+    }
+    .section .section-center .rightbtn{
+        left: 24rem;
+    }
+}

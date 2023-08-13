@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: .625rem;
+    /* overflow: hidden; */
+}
+.registerbg{
+    width: 100vw;
+    height: 100vh;
+    background-color:  #cbc5b8;
+    background-image: url('../Images/ds.jpg');
+    background-repeat: no-repeat;
+    filter: contrast(0.9);
+    background-position:-30rem -10rem;
+    background-size: cover;
+    /* background-position-y: bottom 10px/; */
+}
